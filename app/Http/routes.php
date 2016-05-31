@@ -13,3 +13,7 @@
 
 
 Route::get('admin','AdminController@admin');
+
+Route::get('/', function () {
+    return view('welcome');
+});

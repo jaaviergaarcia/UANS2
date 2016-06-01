@@ -210,8 +210,22 @@ class ComposerStaticInitad8e3326c0d2a5482cef2edd5e094859
     );
 
     public static $classMap = array (
+        'CreateArticuloProfesorsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_000338_create_articulo_profesors_table.php',
         'CreateArticulosTable' => __DIR__ . '/../..' . '/database/migrations/2016_05_31_235808_create_articulos_table.php',
+        'CreateDesarrollosTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_000512_create_desarrollos_table.php',
+        'CreateDistincionProfesorsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001129_create_distincion_profesors_table.php',
+        'CreateDistincionsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_000722_create_distincions_table.php',
+        'CreateInformeProfesorsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001153_create_informe_profesors_table.php',
+        'CreateInformesTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001146_create_informes_table.php',
+        'CreateLibroProfesorsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001215_create_libro_profesors_table.php',
+        'CreateLibrosTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001203_create_libros_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreatePatentesTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001226_create_patentes_table.php',
+        'CreateProfesorReseniasTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001245_create_profesor_resenias_table.php',
+        'CreateProfesorsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001233_create_profesors_table.php',
+        'CreateReseniasTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001252_create_resenias_table.php',
+        'CreateTrabajosTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001300_create_trabajos_table.php',
+        'CreateTutoriasTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_001310_create_tutorias_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/File/Iterator.php',

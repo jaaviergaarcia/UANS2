@@ -14,9 +14,20 @@ class CreateArticulosTable extends Migration {
 	{
 		Schema::create('articulos', function(Blueprint $table)
 		{
-			$table->increments('id');
+			$table->increments('id'); //PK
+			$table->integer('profesor_id');  //FK
+			$table->integer('fecha_pub');
+		    $table->string('tipo_art');
+		    $table->string('autor');
+		    $table->string('titulo_art');
+		    $table->string('revista');
+		    $table->string('principal');
+		    $table->string('autores');
+		    $table->integer('pos_autor');
+		    $table->string('lista_autor');
 			$table->timestamps();
-		});
+	    });
+
 	}
 
 	/**

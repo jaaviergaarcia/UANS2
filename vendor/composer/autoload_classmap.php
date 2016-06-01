@@ -6,8 +6,22 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CreateArticuloProfesorsTable' => $baseDir . '/database/migrations/2016_06_01_000338_create_articulo_profesors_table.php',
     'CreateArticulosTable' => $baseDir . '/database/migrations/2016_05_31_235808_create_articulos_table.php',
+    'CreateDesarrollosTable' => $baseDir . '/database/migrations/2016_06_01_000512_create_desarrollos_table.php',
+    'CreateDistincionProfesorsTable' => $baseDir . '/database/migrations/2016_06_01_001129_create_distincion_profesors_table.php',
+    'CreateDistincionsTable' => $baseDir . '/database/migrations/2016_06_01_000722_create_distincions_table.php',
+    'CreateInformeProfesorsTable' => $baseDir . '/database/migrations/2016_06_01_001153_create_informe_profesors_table.php',
+    'CreateInformesTable' => $baseDir . '/database/migrations/2016_06_01_001146_create_informes_table.php',
+    'CreateLibroProfesorsTable' => $baseDir . '/database/migrations/2016_06_01_001215_create_libro_profesors_table.php',
+    'CreateLibrosTable' => $baseDir . '/database/migrations/2016_06_01_001203_create_libros_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreatePatentesTable' => $baseDir . '/database/migrations/2016_06_01_001226_create_patentes_table.php',
+    'CreateProfesorReseniasTable' => $baseDir . '/database/migrations/2016_06_01_001245_create_profesor_resenias_table.php',
+    'CreateProfesorsTable' => $baseDir . '/database/migrations/2016_06_01_001233_create_profesors_table.php',
+    'CreateReseniasTable' => $baseDir . '/database/migrations/2016_06_01_001252_create_resenias_table.php',
+    'CreateTrabajosTable' => $baseDir . '/database/migrations/2016_06_01_001300_create_trabajos_table.php',
+    'CreateTutoriasTable' => $baseDir . '/database/migrations/2016_06_01_001310_create_tutorias_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator.php',

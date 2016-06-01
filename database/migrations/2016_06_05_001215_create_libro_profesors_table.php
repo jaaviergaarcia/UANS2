@@ -15,8 +15,10 @@ class CreateLibroProfesorsTable extends Migration {
 		Schema::create('libro_profesors', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('profesor_id');
-			$table->integer('libro_id');
+			$table->integer('profesor_id')->unsigned();
+			$table->foreign('profesor_id')->references('id')->on('profesors');
+			$table->integer('libro_id')->unsigned();
+			$table->foreign('libro_id')->references('id')->on('libros');
 			$table->timestamps();
 		});
 	}

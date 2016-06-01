@@ -15,8 +15,11 @@ class CreateProfesorReseniasTable extends Migration {
 		Schema::create('profesor_resenias', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('profesor_id');
-			$table->integer('resenia_id');
+			$table->integer('profesor_id')->unsigned();
+			$table->foreign('profesor_id')->references('id')->on('profesors');
+
+			$table->integer('resenia_id')->unsigned();
+			$table->foreign('resenia_id')->references('id')->on('resenias');
 			$table->timestamps();
 		});
 	}

@@ -24,4 +24,19 @@ class Profesor extends Model {
 		return $this->hasMany('App\Tutoria','profesor_id');
 	}
 
+	//Muchos a Muchos
+
+	public function libros()
+    {
+        return $this->belongsToMany('App\Libro', 'Libro_profesor', 'profesor_id', 'libro_id');
+    }
+
+    public function articulos(){
+    	return $this->belongsToMany('App\Articulo', 'Libro_profesor','profesor_id', 'articulo_id');
+    }
+
+    public function informes(){
+    	return $this->belongsToMany('App\Informe', 'Informe_profesor', 'profesor_id', 'informe_id');
+    }
+
 }

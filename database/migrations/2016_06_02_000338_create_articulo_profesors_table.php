@@ -16,8 +16,11 @@ class CreateArticuloProfesorsTable extends Migration {
 		{
 			
             $table->increments('id');
-			$table->integer('profesor_id');
-			$table->integer('articulo_id');
+			$table->integer('profesor_id')->unsigned();
+			$table->foreign('profesor_id')->references('id')->on('profesors');
+
+			$table->integer('articulo_id')->unsigned();
+			$table->foreign('articulo_id')->references('id')->on('articulos');
 			$table->timestamps();
 			
 		});

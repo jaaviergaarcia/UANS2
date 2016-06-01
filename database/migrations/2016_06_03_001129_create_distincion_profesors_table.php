@@ -16,8 +16,11 @@ class CreateDistincionProfesorsTable extends Migration {
 		{
 			
             $table->increments('id');
-			$table->integer('profesor_id');
-			$table->integer('distincion_id');
+			$table->integer('profesor_id')->unsigned();
+			$table->foreign('profesor_id')->references('id')->on('profesors');
+
+			$table->integer('distincion_id')->unsigned();
+			$table->foreign('distincion_id')->references('id')->on('distincions');
 			$table->timestamps();
 		});
 	}

@@ -15,8 +15,6 @@ class CreateReseniasTable extends Migration {
 		Schema::create('resenias', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('profesor_id')->unsigned();
-			$table->foreign('profesor_id')->references('id')->on('profesors');
 			$table->integer('fecha_pub');
 			$table->string('resenias');
 			$table->string('autor_res');

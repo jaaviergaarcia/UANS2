@@ -15,8 +15,7 @@ class CreateDistincionsTable extends Migration {
 		Schema::create('distincions', function(Blueprint $table)
 		{
 			$table->increments('id'); //PK
-			$table->integer('profesor_id')->unsigned();
-			$table->foreign('profesor_id')->references('id')->on('profesors');
+			
 			$table->integer('fecha');
 			$table->string('nombre_prof');
 			$table->string('distincion');

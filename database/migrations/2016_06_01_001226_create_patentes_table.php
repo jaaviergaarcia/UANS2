@@ -15,7 +15,8 @@ class CreatePatentesTable extends Migration {
 		Schema::create('patentes', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('profesor_id');
+			$table->integer('profesor_id')->unsigned();
+			$table->foreign('profesor_id')->references('id')->on('profesors');
 			$table->date('fecha_pub');
 			$table->string('trabajos');
 			$table->string('autor_pat');

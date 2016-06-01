@@ -15,7 +15,8 @@ class CreateTrabajosTable extends Migration {
 		Schema::create('trabajos', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('profesor_id');
+			$table->integer('profesor_id')->unsigned();
+			$table->foreign('profesor_id')->references('id')->on('profesors');
 			$table->integer('fecha_pub');
 			$table->string('tipo_trab');
 			$table->string('autor');

@@ -15,7 +15,8 @@ class CreateArticulosTable extends Migration {
 		Schema::create('articulos', function(Blueprint $table)
 		{
 			$table->increments('id'); //PK
-			$table->integer('profesor_id');  //FK
+			$table->integer('profesor_id')->unsigned();
+			$table->foreign('profesor_id')->references('id')->on('profesors');
 			$table->integer('fecha_pub');
 		    $table->string('tipo_art');
 		    $table->string('autor');

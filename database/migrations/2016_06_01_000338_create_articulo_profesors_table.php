@@ -19,6 +19,7 @@ class CreateArticuloProfesorsTable extends Migration {
 			$table->integer('profesor_id');
 			$table->integer('articulo_id');
 			$table->timestamps();
+			
 		});
 	}
 

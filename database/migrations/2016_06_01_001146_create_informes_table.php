@@ -14,8 +14,9 @@ class CreateInformesTable extends Migration {
 	{
 		Schema::create('informes', function(Blueprint $table)
 		{
-		   $table->increments('id');
-			$table->integer('profesor_id');
+		   $table->increments('id');  //PK
+			$table->integer('profesor_id')->unsigned();
+			$table->foreign('profesor_id')->references('id')->on('profesors');
 			$table->integer('fecha_pub');
 			$table->string('autor');
 			$table->string('titulo_info');

@@ -15,7 +15,8 @@ class CreateTutoriasTable extends Migration {
 		Schema::create('tutorias', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('profesor_id');
+			$table->integer('profesor_id')->unsigned();
+			$table->foreign('profesor_id')->references('id')->on('profesors');
 			$table->string('nombre_alum');
 			$table->date('fecha_in');
 			$table->string('institucion_alum');

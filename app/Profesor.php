@@ -31,12 +31,10 @@ class Profesor extends Model {
         return $this->belongsToMany('App\Libro', 'Libro_profesors', 'profesor_id', 'libro_id');
     }
 
-    public function articulos(){
-<<<<<<< HEAD
-    	return $this->belongsToMany('App\Articulo', 'Articulo_profesor','profesor_id', 'articulo_id');
-=======
-    	return $this->belongsToMany('App\Articulo', 'Libro_profesors','profesor_id', 'articulo_id');
->>>>>>> origin/master
+    public function articulos()
+    {
+
+      	return $this->belongsToMany('App\Articulo', 'Articulo_profesors','profesor_id', 'articulo_id');
     }
 
     public function informes(){

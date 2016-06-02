@@ -22,17 +22,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
-Route::get('prueba_patente', function(){
-	$patente= Patente::find(1);
-	return ('Consulta'.$patente);
-});
 
 Route::get('prueba_patente', function(){
 	$patente= Patente::find(1);
 	return ('Consulta'.$patente);
 });
-=======
 
 Route::get('prueba_tutorias', function()
 {
@@ -51,4 +45,3 @@ Route::get('libros', function()
 	$libros = Profesor::find(1)->libros;
 	return ("Holi--->".$libros);
 });
->>>>>>> origin/master

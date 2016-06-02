@@ -1,5 +1,7 @@
 <?php
 
+Use App\Patente;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -16,4 +18,14 @@ Route::get('admin','AdminController@admin');
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('prueba_patente', function(){
+	$patente= Patente::find(1);
+	return ('Consulta'.$patente);
+});
+
+Route::get('prueba_patente', function(){
+	$patente= Patente::find(1);
+	return ('Consulta'.$patente);
 });

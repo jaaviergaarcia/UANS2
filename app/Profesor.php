@@ -32,7 +32,7 @@ class Profesor extends Model {
     }
 
     public function articulos(){
-    	return $this->belongsToMany('App\Articulo', 'Libro_profesor','profesor_id', 'articulo_id');
+    	return $this->belongsToMany('App\Articulo', 'Articulo_profesor','profesor_id', 'articulo_id');
     }
 
     public function informes(){

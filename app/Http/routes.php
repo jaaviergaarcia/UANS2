@@ -33,3 +33,8 @@ Route::get('prueba_tutorias2', function()
 	return ("Holi--->".$tutorias_profe);
 });
 
+Route::get('libros', function()
+{
+	$libros = Profesor::find(1)->libros;
+	return ("Holi--->".$libros);
+});

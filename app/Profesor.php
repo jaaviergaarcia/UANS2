@@ -28,15 +28,15 @@ class Profesor extends Model {
 
 	public function libros()
     {
-        return $this->belongsToMany('App\Libro', 'Libro_profesor', 'profesor_id', 'libro_id');
+        return $this->belongsToMany('App\Libro', 'Libro_profesors', 'profesor_id', 'libro_id');
     }
 
     public function articulos(){
-    	return $this->belongsToMany('App\Articulo', 'Libro_profesor','profesor_id', 'articulo_id');
+    	return $this->belongsToMany('App\Articulo', 'Libro_profesors','profesor_id', 'articulo_id');
     }
 
     public function informes(){
-    	return $this->belongsToMany('App\Informe', 'Informe_profesor', 'profesor_id', 'informe_id');
+    	return $this->belongsToMany('App\Informe', 'Informe_profesors', 'profesor_id', 'informe_id');
     }
 
 }

@@ -6,7 +6,7 @@ class Articulo extends Model {
 
 	public function profesores()
 	{
-		return $this->belongsToMany('App\Profesor', 'Articulo_profesor', 'articulo_id', 'profesor_id');
+		return $this->belongsToMany('App\Profesor', 'Articulo_profesors', 'articulo_id', 'profesor_id');
 	}
 
 }

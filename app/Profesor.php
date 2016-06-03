@@ -41,4 +41,14 @@ class Profesor extends Model {
     	return $this->belongsToMany('App\Informe', 'Informe_profesors', 'profesor_id', 'informe_id');
     }
 
+    public function distinciones()
+	{
+		return $this->belongsToMany('App\Distincion', 'Distincion_profesors', 'profesor_id', 'distincion_id');
+	}
+
+	public function resenias()
+	{
+		return $this->belongsToMany('App\Resenia', 'Profesor_resenias', 'profesor_id', 'resenia_id');
+	}
+
 }

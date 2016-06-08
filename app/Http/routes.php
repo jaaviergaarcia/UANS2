@@ -59,7 +59,7 @@ Route::get('profesor_desarrollo', function(){
 /*:::::::T R A B A J O::::::::::::.:::*/
 Route::get('trabajo', function(){
 	$trabajo= Trabajo::find(1);
-	return ('Consulta:'.$trabajo);
+	return ('Consulta:'.$trabajo); 
 });
 
 Route::get('trabajo_profesor', function(){
@@ -67,7 +67,7 @@ Route::get('trabajo_profesor', function(){
 	return ('Consulta: '.$trabajo);
 });
 Route::get('profesor_trabajo', function(){
-	$trabajo= Profesor::find(1)->trabajo;
+	$trabajo= Profesor::find(1)->trabajos;
 	return ('Consulta: '.$trabajo);
 });
 
@@ -101,7 +101,7 @@ Route::get('distincion',function()
 	return('Consulta: '.$x);
 
 });
-//marco error
+
 Route::get('distinciones_profesor',function()
 {
  	$x = Distincion::find(1)->profesores;
@@ -125,7 +125,7 @@ Route::get('informe', function()
 
 Route::get('informe_prof', function()
 {
-	$x = Informe::find()->profesores;
+	$x = Informe::find(1)->profesores;
 	return('Consulta:' .$x);
 
 });

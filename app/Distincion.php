@@ -6,7 +6,7 @@ class Distincion extends Model {
 
 	public function profesores()
 	{
-		return $this->belongsToMany('App\Profesor', 'Disticion_profesor', 'distincion_id', 'profesor_id');
+		return $this->belongsToMany('App\Profesor', 'Distincion_profesors', 'distincion_id', 'profesor_id');
 	}
 
 }

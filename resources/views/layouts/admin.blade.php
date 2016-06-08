@@ -38,11 +38,6 @@
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
                         <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
@@ -59,22 +54,145 @@
                                     <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class='fa fa-list-ol fa-fw'></i> Usuarios</a>
+                                    <a href="#"><i class='glyphicon glyphicon-erase'></i> Eliminar</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
                                 </li>
                             </ul>
                         </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-newspaper-o"></i> Articulo<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-book"></i> Libro<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-list-alt"></i> Informe<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-star-o"></i> Distinciones/Premiaciones<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li>
+                            <a href="#"><i class="fa fa-file-text-o"></i> Desarrollo<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-file-o"></i> Reseñas<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-copyright"></i> Patentes<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-file-o"></i> Trabajos<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-male"></i> Tutorias<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
                     </ul>
                 </div>
             </div>
-
      </nav>
 
-        <div id="page-wrapper">
-            @yield('content')
-        </div>
+        
 
     </div>   
-
+    <div id="page-wrapper">
+            @yield('content')
+    </div>
     
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

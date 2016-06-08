@@ -18,11 +18,11 @@
   <body>
 
     <div class="login-form">
-      <form action="index.html">
+      <form action=".\admin">
         <div class="top">
-          <img src="img/kode-icon.png" alt="icon" class="icon">
-          <h1>UAEN</h1>
-          <h4>Bienvenido</h4>
+          <img src="img/logo-uaen-small.jpg" alt="icon" class="icon">
+          
+          <h3>Bienvenido</h3>
         </div>
         <div class="form-area">
           <div class="group">
@@ -37,9 +37,7 @@
           <button type="submit" class="btn btn-default btn-block">Entrar</button>
         </div>
       </form>
-      <div class="footer-links row">
-        <div class="col-xs-6 text-right"><a href="#"><i class="fa fa-lock"></i> Olvidaste la contraseña</a></div>
-      </div>
+      
     </div>
 
 </body>

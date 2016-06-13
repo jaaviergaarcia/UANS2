@@ -2,7 +2,7 @@
 
 @section('content')
 
-<p>Esta parte se refresca</p>
+<h2>Refrescar2</h2>
 
 @stop
 

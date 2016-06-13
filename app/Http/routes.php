@@ -22,15 +22,46 @@ use App\Distincion;
 Use App\Informe;
 use App\Resenia;
 
+/*route::get('vista','controlador@nombre_de_funcion:')*/
+
 Route::get('admin','AdminController@admin');
+Route::get('articulo','AdminController@articulo');
+Route::get('user','AdminController@usuario');
+Route::get('libro','AdminController@libro');
+Route::get('informe','AdminController@informe');
+Route::get('distincion','AdminController@distincion');
+Route::get('desarrollo','AdminController@desarrollo');
+Route::get('resena','AdminController@resena');
+Route::get('patente','AdminController@patente');
+Route::get('trabajo','AdminController@trabajo');
 
 Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Uno a Muchos
 /*:::::::P A T E N T E ::::::::::::.:::*/
-Route::get('patente', function(){
+/*Route::get('patente', function(){
 	$patente= Patente::find(1);
 	return ('Consulta:'.$patente);
 });
@@ -43,11 +74,12 @@ Route::get('profesor_patente', function(){
 	return ('Consulta: '.$patente);
 });
 /*:::::::D E S A R R O L L O::::::::::::.:::*/
-Route::get('desarrollo', function(){
+/*Route::get('desarrollo', function(){
 	$desarrollo= Desarrollo::find(1);
 	return ('Consulta:'.$desarrollo);
-});
+}); */
 
+/*
 Route::get('desarrollo_profesor', function(){
 	$desarrollo= Desarrollo::find(1)->profesor;
 	return ('Consulta: '.$desarrollo);
@@ -57,6 +89,7 @@ Route::get('profesor_desarrollo', function(){
 	return ('Consulta: '.$desarrollo);
 });
 /*:::::::T R A B A J O::::::::::::.:::*/
+/*
 Route::get('trabajo', function(){
 	$trabajo= Trabajo::find(1);
 	return ('Consulta:'.$trabajo); 
@@ -80,58 +113,50 @@ Route::get('articulos',function()
 
 });
 
-Route::get('articulos_profesor',function()
-{
+Route::get('articulos_profesor',function(){
  	$x = Articulo::find(1)->profesores;
  	return('Consulta: '.$x);
 
 });
 
-Route::get('profesores_articulo',function()
-{
+Route::get('profesores_articulo',function(){
  	$x = Profesor::find(1)->articulos;
  	return('Consulta: '.$x);
 
 });
 
 /*:::::::D I S T I N C I O N::::::::::::.:::*/
-Route::get('distincion',function()
-{
+/*Route::get('distincion',function(){
 	$x = Distincion::find(1);
 	return('Consulta: '.$x);
 
-});
+});*/
 
-Route::get('distinciones_profesor',function()
-{
+Route::get('distinciones_profesor',function(){
  	$x = Distincion::find(1)->profesores;
  	return('Consulta: '.$x);
 
 });
 
-Route::get('profesores_distincion',function()
-{
+Route::get('profesores_distincion',function(){
  	$x = Profesor::find(1)->distinciones;
  	return('Consulta: '.$x);
 
 });
 /*:::::::I N F O R M E::::::::::::.:::*/
-Route::get('informe', function()
-{
+/*Route::get('informe', function(){
 	$x = Informe::find(1);
 	return('Consulta:' .$x);
 
-});
+}); */
 
-Route::get('informe_prof', function()
-{
+Route::get('informe_prof', function(){
 	$x = Informe::find(1)->profesores;
 	return('Consulta:' .$x);
 
 });
 
-Route::get('profes_informe', function()
-{
+Route::get('profes_informe', function(){
 	$x = Profesor::find(1)->informes;
 	return('Consulta:' .$x);
 

@@ -1,204 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kode is a Premium Bootstrap Admin Template, It's responsive, clean coded and mobile friendly">
+  <meta name="keywords" content="bootstrap, admin, dashboard, flat admin template, responsive," />
+  <title>Sistema:.:Unidad Academica de Estudios Nucleares</title>
 
-<head>
+  <!-- ========== Css Files ========== -->
+  <link href="css/root.css" rel="stylesheet">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Administrador</title>
-    
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link href="css/metisMenu.min.css" rel="stylesheet">
-    <link href="css/sb-admin-2.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <!-- Start Page Loading -->
+  <div class="loading"><img src="img/loading.gif" alt="loading-img"></div>
+  <!-- End Page Loading -->
+ <!-- //////////////////////////////////////////////////////////////////////////// --> 
+  <!-- START TOP -->
+  <div id="top" class="clearfix">
 
-</head>
+  	<!-- Start App Logo -->
+  	<div class="applogo">
+  		<a href="admin" class="logo">Sistema UAEN</a>
+  	</div>
+  	<!-- End App Logo -->
 
-<body>
+    <!-- Start Sidebar Show Hide Button -->
+    <a href="#" class="sidebar-open-button"><i class="fa fa-bars"></i></a>
+    <a href="#" class="sidebar-open-button-mobile"><i class="fa fa-bars"></i></a>
+    <!-- End Sidebar Show Hide Button -->
 
-    <div id="wrapper">
+    <!-- Start Searchbox -->
+    <form class="searchform">
+      <input type="text" class="searchbox" id="searchbox" placeholder="Search">
+      <span class="searchbutton"><i class="fa fa-search"></i></span>
+    </form>
+    <!-- End Searchbox -->
 
-        
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Sistema-UAN</a>
-            </div>
-           
+    <!-- Start Top Right -->
+    <ul class="top-right">
+    <li class="dropdown link">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle profilebox"><span class="fa fa-user"></span></a>
+        <ul class="dropdown-menu dropdown-menu-list dropdown-menu-right">
+          <li><a href="#"><i class="fa falist fa-power-off"></i> Logout</a></li>
+        </ul>
+    </li>
 
-            <ul class="nav navbar-top-links navbar-right">
-                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+    </ul>
+    <!-- End Top Right -->
 
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-users fa-fw"></i> Usuario<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class='glyphicon glyphicon-erase'></i> Eliminar</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
+  </div>
+  <!-- END TOP -->
+ 
+<!-- START SIDEBAR -->
+<div class="sidebar clearfix">
 
-                        <li>
-                            <a href="#"><i class="fa fa-newspaper-o"></i> Articulo<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
+<ul class="sidebar-panel nav">
+  <li class="sidetitle">MENÚ</li>
+  <li><a href="#"><span class="icon color5"><i class="fa fa-users fa-fw"></i></span>Usuarios<span class="caret"></span></a>
+    <ul>
+      <li><a href="user"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+      <li><a href="#"><i class="fa fa-search"></i>Consultar</a></li>
+    </ul>
+  </li>
+  <li><a href="#"><span class="icon color6"><i class="fa fa-newspaper-o"></i></span>Articulo<span class="caret"></span></a>
+  <ul>
+      <li><a href="articulo"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+  </ul>
+  </li>
+  <li><a href="#"><span class="icon color7"><i class="fa fa-book"></i></span>Libro<span class="caret"></span></a>
+  <ul>
+      <li><a href="libro"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+  </ul>
+  </li>
+  <li><a href="#"><span class="icon color8"><i class="fa fa-list-alt"></i></span>Informe<span class="caret"></span></a>
+  <ul>
+      <li><a href="informe"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+  </ul>
+  </li>
+  <li><a href="#"><span class="icon color9"><i class="fa fa-star-o"></i></span>Distinciones/Premios<span class="caret"></span></a>
+    <ul>
+      <li><a href="distincion"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+    </ul>
+  </li>
+  <li><a href="#"><span class="icon color10"><i class="fa fa-file-text-o"></i></span>Desarrollo<span class="caret"></span></a>
+  <ul>
+      <li><a href="desarrollo"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+  </ul>
+  </li>
+  <li><a href="#"><span class="icon color11"><i class="fa fa-file-o"></i></span>Reseñas<span class="caret"></span></a>
+  <ul>
+      <li><a href="resena"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+  </ul>
+  </li>
+  <li><a href="#"><span class="icon color8"><i class="fa fa-copyright"></i></span>Patentes<span class="caret"></span></a>
+  <ul>
+      <li><a href="patente"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+  </ul>
+  </li>
+  <li><a href="#"><span class="icon color12"><i class="fa fa-font"></i></span>Trabajos<span class="caret"></span></a>
+  <ul>
+      <li><a href="trabajo"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+  </ul>
+  </li>
+  <li><a href="#"><span class="icon color14"><i class="fa fa-male"></i></span>Tutorias<span class="caret"></span></a>
+  <ul>
+      <li><a href="#"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
+  </ul>    
+  </li>
+</ul>
+</div>
+<!-- END SIDEBAR -->
+<!-- //////////////////////////////////////////////////////////////////////////// --> 
 
-                        <li>
-                            <a href="#"><i class="fa fa-book"></i> Libro<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
+ <!-- //////////////////////////////////////////////////////////////////////////// --> 
+<!-- START CONTENT -->
+<div class="content">
 
-                        <li>
-                            <a href="#"><i class="fa fa-list-alt"></i> Informe<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
+  <!-- Start Page Header -->
+  <div class="page-header">
+    <h1 class="title">Seleccione que registros desea ver:</h1>
+      <ol class="breadcrumb">
+        <li><a href="#">Articulos</a></li>
+        <li><a href="#">Libros</a></li>
+        <li><a href="#">Informes</a></li>
+        <li><a href="#">Distinciones/Premios</a></li>
+        <li><a href="#">Desarrollos</a></li>
+        <li><a href="#">Reseñas</a></li>
+        <li><a href="#">Patentes</a></li>
+        <li><a href="#">Trabajos</a></li>
+        <li><a href="#">Tutorias</a></li>
+        <li><a href="#">Productividad</a></li>
+      </ol>
+  </div>
+  <!-- End Page Header -->
 
-                        <li>
-                            <a href="#"><i class="fa fa-star-o"></i> Distinciones/Premiaciones<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
+ <!-- //////////////////////////////////////////////////////////////////////////// --> 
+<!-- START CONTAINER -->
+<div class="container-default">
 
+@yield('content')
+<br><br><br><br><br><br><br><br><br><br>
 
-
-                        <li>
-                            <a href="#"><i class="fa fa-file-text-o"></i> Desarrollo<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-file-o"></i> Reseñas<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-copyright"></i> Patentes<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-file-o"></i> Trabajos<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-male"></i> Tutorias<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#"><i class='fa fa-plus fa-fw'></i> Agregar</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#"><i class='fa fa-search'></i> Consultar</a>
-                                </li>
-                            </ul>
-                        </li>
+</div>
+<!-- END CONTAINER -->
+ <!-- //////////////////////////////////////////////////////////////////////////// --> 
 
 
-                    </ul>
-                </div>
-            </div>
-     </nav>
+<!-- Start Footer -->
+<div class="row footer">
+  <div class="col-md-6 text-left">
+  Copyright © 2015 <a href="http://themeforest.net/user/egemem/portfolio" target="_blank">Egemem</a> All rights reserved.
+  </div>
+  <div class="col-md-6 text-right">
+    Design and Developed by <a href="http://themeforest.net/user/egemem/portfolio" target="_blank">Egemem</a>
+  </div> 
+</div>
+<!-- End Footer -->
 
-        
+<!-- ================================================
+jQuery Library
+================================================ -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
 
-    </div>   
-    <div id="page-wrapper">
-            @yield('content')
-    </div>
-    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/metisMenu.min.js"></script>
-    <script src="js/sb-admin-2.js"></script>
+<!-- ================================================
+Bootstrap Core JavaScript File
+================================================ -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+
+<!-- ================================================
+Plugin.js - Some Specific JS codes for Plugin Settings
+================================================ -->
+<script type="text/javascript" src="js/plugins.js"></script>
+
 
 </body>
-
 </html>

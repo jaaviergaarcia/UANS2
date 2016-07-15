@@ -46,4 +46,8 @@ class AdminController extends Controller {
 	public function trabajo(){
 		return view('admin.trabajo');
 	}
+
+	public function ver_articulo(){
+		return view('consultas.ver_articulo');
+	}
 }

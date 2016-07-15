@@ -22,11 +22,71 @@ use App\Distincion;
 Use App\Informe;
 use App\Resenia;
 
+
+//rutas para los middleware
+/*
+Route::get('RutaMiddle', ['middleware' => 'Prueba_middle', function(){
+    return '<h1>Hey everybody this shit is vvorking!!</h1>';
+}]); */
+
 /*route::get('vista','controlador@nombre_de_funcion:')*/
 
+/*
+Route::get('/', function () {
+    return view('welcome');
+}); */
+
+Route::get('/', function(){
+	return view('login');
+});
+
+
 Route::get('admin','AdminController@admin');
-Route::get('articulo','AdminController@articulo');
-Route::get('user','AdminController@usuario');
+Route::get('ver_articulo','AdminController@ver_articulo');
+
+
+/*PARA EL MODELO DE PROFESOR-USUARIO*/
+Route::get('nuevo_profesor','UsuarioController@nuevo_profesor');
+Route::post('guardar_profesor','UsuarioController@guardar_profesor');
+
+
+/*PARA EL MODELO DE ARTICULO*/
+
+//Route::get('articulo','AdminController@articulo');
+Route::get('nuevo_articulo','ArticuloController@nuevo_articulo');
+Route::post('guardar_articulo','ArticuloController@guardar_articulo');
+
+
+/*PARA EL MODELO DE DISTINCION*/
+Route::get('nueva_distincion','DistincionController@nueva_distincion');
+Route::post('guardar_distincion','DistincionController@guardar_distincion');
+
+
+
+/*PARA EL MODELO DE INFORME*/
+Route::get('nuevo_informe','InformeController@nuevo_informe');
+Route::post('guardar_informe','InformeController@guardar_informe');
+
+/*PARA EL MODELO DE LIBRO*/
+
+Route::get('nuevo_libro','LibroController@nuevo_libro');
+Route::post('guardar_libro','LibroController@guardar_libro');
+
+
+
+
+
+
+
+/* PARA EL MODELO DE DESARROLLO*/
+Route::get('nuevo_desarrollo','DesarrolloController@nuevo_desarrollo');
+Route::post('guardar_desarrollo','DesarrolloController@guardar_desarrollo');
+
+
+
+
+/*****************************************/
+//Route::get('user','AdminController@usuario');
 Route::get('libro','AdminController@libro');
 Route::get('informe','AdminController@informe');
 Route::get('distincion','AdminController@distincion');
@@ -35,9 +95,6 @@ Route::get('resena','AdminController@resena');
 Route::get('patente','AdminController@patente');
 Route::get('trabajo','AdminController@trabajo');
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
 
@@ -124,6 +181,8 @@ Route::get('profesores_articulo',function(){
  	return('Consulta: '.$x);
 
 });
+
+
 
 /*:::::::D I S T I N C I O N::::::::::::.:::*/
 /*Route::get('distincion',function(){

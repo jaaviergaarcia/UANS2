@@ -16,19 +16,20 @@
         </div>
 
             <div class="panel-body">
-              <form class="form-horizontal">
+              <form class="form-horizontal" method="post" action="guardar_distincion" enctype="multipart/form-data">
+              <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <div class="form-group">
                   <label class="col-sm-2 control-label form-label">Año de Publicacion:</label>
                   <div class="col-sm-8">
-                    <select class="selectpicker" data-style="btn-primary">
-                        <option>Seleccione una opcion</option>
-                        <option>2011</option>
-                        <option>2012</option>
-                        <option>2013</option>
-                        <option>2014</option>
-                        <option>2015</option>
-                        <option>2016</option>
+                    <select class="selectpicker" data-style="btn-primary" name="fecha" required="">
+                        <option selected disabled value="000">Seleccione una opcion</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
                       </select>                  
                   </div>
                 </div>
@@ -36,28 +37,28 @@
                 <div class="form-group">
                   <label class="col-sm-2 control-label form-label">Nombre del Profesor:</label>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-line" placeholder="Nombre del profesor premiado">
+                    <input type="text" class="form-control form-control-line" placeholder="Nombre del profesor premiado" name="nombre_prof" required="">
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label class="col-sm-2 control-label form-label">Título de la Distinción:</label>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-line" placeholder="Titulo de la distinción otorgada">
+                    <input type="text" class="form-control form-control-line" placeholder="Titulo de la distinción otorgada" name="distincion" required="">
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label class="col-sm-2 control-label form-label">Institucion:</label>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-line" placeholder="Institucion otorgante">
+                    <input type="text" class="form-control form-control-line" placeholder="Institucion otorgante" name="institucion" required="">
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label class="col-sm-2 control-label form-label">Pais:</label>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-line" placeholder="Pais donde se otorgo la distinción">
+                    <input type="text" class="form-control form-control-line" placeholder="Pais donde se otorgo la distinción" name="pais" required="">
                   </div>
                 </div>
                 
@@ -65,7 +66,14 @@
                 <div class="form-group">
                   <label class="col-sm-2 control-label form-label">Descripcion de la Distincion</label>
                   <div class="col-sm-8">
-                      <textarea class="form-control" rows="3" id="textarea1" placeholder="Descripcion de la Distinción">    </textarea>
+                      <textarea class="form-control" rows="3" id="textarea1" placeholder="Descripcion de la Distinción" name="descripcion" required="">    </textarea>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                 <label class="col-sm-2 control-label form-label"></label>
+                  <div class="col-sm-4">
+                      <button type="submit" class="btn btn-default btn-block">Guardar</button>             
                   </div>
                 </div>
 

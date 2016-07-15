@@ -28,7 +28,7 @@ return [
 	|
 	*/
 
-	'model' => 'App\User',
+	'model' => 'App\Profesor',  //modelo a usar User
 
 	/*
 	|--------------------------------------------------------------------------
@@ -41,8 +41,8 @@ return [
 	|
 	*/
 
-	'table' => 'users',
-
+	'table' => 'Profesors', //tabla que utilizo para autentificar al usuaro //users
+ 
 	/*
 	|--------------------------------------------------------------------------
 	| Password Reset Settings

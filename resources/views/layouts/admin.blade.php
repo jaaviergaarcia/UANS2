@@ -31,12 +31,6 @@
     <a href="#" class="sidebar-open-button-mobile"><i class="fa fa-bars"></i></a>
     <!-- End Sidebar Show Hide Button -->
 
-    <!-- Start Searchbox -->
-    <form class="searchform">
-      <input type="text" class="searchbox" id="searchbox" placeholder="Search">
-      <span class="searchbutton"><i class="fa fa-search"></i></span>
-    </form>
-    <!-- End Searchbox -->
 
     <!-- Start Top Right -->
     <ul class="top-right">
@@ -60,32 +54,32 @@
   <li class="sidetitle">MENÚ</li>
   <li><a href="#"><span class="icon color5"><i class="fa fa-users fa-fw"></i></span>Usuarios<span class="caret"></span></a>
     <ul>
-      <li><a href="user"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="nuevo_profesor"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
       <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
       <li><a href="#"><i class="fa fa-search"></i>Consultar</a></li>
     </ul>
   </li>
   <li><a href="#"><span class="icon color6"><i class="fa fa-newspaper-o"></i></span>Articulo<span class="caret"></span></a>
   <ul>
-      <li><a href="articulo"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="nuevo_articulo"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
       <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
   </ul>
   </li>
   <li><a href="#"><span class="icon color7"><i class="fa fa-book"></i></span>Libro<span class="caret"></span></a>
   <ul>
-      <li><a href="libro"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="nuevo_libro"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
       <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
   </ul>
   </li>
   <li><a href="#"><span class="icon color8"><i class="fa fa-list-alt"></i></span>Informe<span class="caret"></span></a>
   <ul>
-      <li><a href="informe"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="nuevo_informe"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
       <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
   </ul>
   </li>
   <li><a href="#"><span class="icon color9"><i class="fa fa-star-o"></i></span>Distinciones/Premios<span class="caret"></span></a>
     <ul>
-      <li><a href="distincion"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
+      <li><a href="nueva_distincion"><i class="fa fa-plus fa-fw"></i>Agregar</a></li>
       <li><a href="#"><i class="fa fa-eraser"></i>Eliminar</a></li>
     </ul>
   </li>
@@ -151,8 +145,9 @@
 <div class="container-default">
 
 @yield('content')
-<br><br><br><br><br><br><br><br><br><br>
-
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
 </div>
 <!-- END CONTAINER -->
  <!-- //////////////////////////////////////////////////////////////////////////// --> 
@@ -161,10 +156,10 @@
 <!-- Start Footer -->
 <div class="row footer">
   <div class="col-md-6 text-left">
-  Copyright © 2015 <a href="http://themeforest.net/user/egemem/portfolio" target="_blank">Egemem</a> All rights reserved.
+  Copyright © 2016 <a href="http://themeforest.net/user/egemem/portfolio" target="_blank">Egemem</a> All rights reserved.
   </div>
   <div class="col-md-6 text-right">
-    Design and Developed by <a href="http://themeforest.net/user/egemem/portfolio" target="_blank">Egemem</a>
+    Design and Developed by djvalllesg<a href="#" target="_blank"></a>
   </div> 
 </div>
 <!-- End Footer -->

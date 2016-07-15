@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h2>Refrescar2</h2>
+<h2>Bienvenido</h2>
 
 @stop
 
